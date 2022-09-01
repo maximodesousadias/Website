@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+Bi</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="div-logo">
+            <img src="./img/img-logo.png" alt="" id="img-logo" class="show-div">
+        </div>
+        <div class="div-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about-us">About us</a></li>
+                <li class="nav-item"><a href="#our-work">Our work</a></li>
+                <li class="nav-item"><a href="#clients">Clients</a></li>
+                <li class="nav-item"><a href="./login.html">Log In</a></li>
+            </ul>
+        </div>
+        
+        <div class="dropdown-menu">
+            
+            <input type="checkbox" id="toggle-nav">
+            <label for="toggle-nav" id="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="index.html#home" data-menu-page>Home</a></li>
+                    <li><a href="index.html#about-us" data-menu-page>About us</a></li>
+                    <li><a href="index.html#our-work" data-menu-page>Our work</a></li>
+                    <li><a href="index.html#clients" data-menu-page>Clients</a></li>
+                    <li><a href="./login.html" data-menu-page>Log In</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <article id="home">
+        <div class="div-contact">
+
+            <form action="https://formspree.io/f/mgeddnzb" method="POST" id="form-Data"> <!--En action se agrega el link donde se enviará la información del formulario-->
+                <p class="tit-contact">I will respond ASAP!</p>
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" class="box text-box" required>
+            
+                
+                <label for="surname" class="form-label">Surname:</label>
+                <input type="text" id="surname" placeholder="Your Surname" class="box text-box" onkeydown= "validation()" required>
+
+                <label for="mail" class="form-label">Email:</label>
+                <div class="div-email">
+                     
+                </div>
+                <input type="email" id="mail" placeholder="Your Email" class="box text-box" required>  
+                <span id="validation-text"></span>
+                <div class="div-gender">
+
+                    <input type="radio" id="male" name="gender" class="btn-box" required>
+                    <label for="male" class="form-label">Male</label>
+        
+                    <input type="radio" id="female" name="gender" class="btn-box">
+                    <label for="female" class="form-label">Female</label>
+                </div>
+
+                <div class="div-msgBox">
+                    <label for="msg" class="form-label">Your Message:</label>
+                    <textarea form="form-Data" id="msg" class="box msg-box" placeholder="Be as concise as possible."></textarea>
+                </div>
+
+                <button type="submit" class="btn-box btn-send">Send</button>
+
+            </form>
+        </div>
+
+        <div class="div-carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button>&#8656;</button>
+            <button class="carousel-button next" data-carousel-button>&#8658;</button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="./img/img-carousel-1.png" alt="">
+                    <span class="text-slide">We are a group of analysts & developers integrated with the last technologies!</span>
+                </li>
+                <li class="slide">
+                    <img src="./img/img-carousel-2.png" alt="">
+                    <span class="text-slide">We are skilled on ETL processes. According to our clients' needs we can integrate any platform to Power Bi Dashboards.</span>
+                </li>
+                <li class="slide">
+                    <img src="./img/img-carousel-3.png" alt="">
+                    <span class="text-slide">Also, we can advice you on which metrics could be useful to make decisions in your business.</span>
+                </li>
+            </ul>
+
+        </div>
+    </article>
+
+    <section id="about-us">
+        <div id="div-about">
+            <h2 id="tit-about">About us...</h2>
+            <p>We are a company which delivers solutions to SMEs in order to help them improve their businesses. Managing and understanding data is the necessary further step to escalate your company. We are expertises in Technological Solutions, Cash Flow management & Operations tracking.
+            </p>
+        </div>
+    </section>
+    <section id="our-work">
+        <div class="div-work icons-work">
+            <div class="div-icon">
+                <img src="./img/how-1.png" alt="" class="img-icon">
+                <h3>Know-How</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur distinctio cum natus sequi, deserunt fugit aspernatur qui voluptatum dolor, nostrum iusto sint doloribus aut magni, perspiciatis maxime? Alias, assumenda.</p>
+            </div>
+            <div class="div-icon">
+                <img src="./img/how-2.png" alt="" class="img-icon">
+                <h3>Database Management</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur distinctio cum natus sequi, deserunt fugit aspernatur qui voluptatum dolor, nostrum iusto sint doloribus aut magni, perspiciatis maxime? Alias, assumenda.</p>
+            </div>
+            <div class="div-icon">
+                <img src="./img/how-3.png" alt="" class="img-icon">
+                <h3>Insights</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur distinctio cum natus sequi, deserunt fugit aspernatur qui voluptatum dolor, nostrum iusto sint doloribus aut magni, perspiciatis maxime? Alias, assumenda.</p>
+            </div>
+        </div>
+    </section>
+    <section id="clients">
+        <div class="div-clients">
+            <h2 id="tit-clients">Our clients</h2>
+            <ul class="list-client">
+                <li class="item-client">
+                    <h3>Client 1</h3>
+                    <div class="logo-client"></div>
+                    <img src="https://img.freepik.com/free-vector/logo-lorem-ipsum-slogan-design-art-template_642953-78.jpg?w=740" class="img-client" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime, temporibus unde suscipit laboriosam, error eos cumque dolor doloremque quam hic magni amet consectetur eveniet rerum sint nemo quis minus.</p>
+                </li>
+                <li class="item-client">
+                    <h3>Client 2</h3>
+                    <img src="https://img.freepik.com/free-vector/logo-company-slogan-here-design-art-template_647943-6.jpg?w=740" class="img-client" alt="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nisi illum nobis eos obcaecati nemo ea? Illo, qui ratione, harum, eum aut maxime impedit laborum culpa ipsam magnam tempora rem.</p>
+                </li>
+                <li class="item-client">
+                    <h3>Client 3</h3>
+                    <img src="https://img.freepik.com/free-vector/logo-company-slogan-here-design-art-template_647943-6.jpg?w=740" class="img-client" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia ab est unde! Ut et architecto necessitatibus quam asperiores cum quibusdam ex voluptate? Iusto, eligendi autem? Ipsum nihil perspiciatis aliquid.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="div-line"></div>
+        <div class="div-footer">
+            <div class="foot-contact">
+                <h3>Contact us:</h3>
+                <ul>
+                    <li><b>Phone: </b>0414 299 212</li>
+                    <li><b>Email: </b>plusbi@gmail.com</li>
+                    <li><b>Address: </b>Cunningham St. 2000, Haymarket</li>
+                </ul>
+            </div>
+            <div class="foot-media">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/maximodesousadias/" target="_blank">
+                            <i class="fa fa-linkedin" id="media"></i> <b>Linkedin</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/mdedays" target="_blank">
+                            <i class="fa fa-twitter" id="media"></i> <b>Twitter</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/maximodesousadias" target="_blank">
+                            <i class="fa fa-github" id="media"></i> <b>Github</b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+</body>
+</html>
